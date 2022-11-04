@@ -1,0 +1,11 @@
+*.cache
+*.dll
+*.exe
+*.pdb
+*.suo
+*.user
+*.config
+obj
+build
+packages
+/.vs

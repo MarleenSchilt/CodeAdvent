@@ -77,7 +77,7 @@ namespace Day25
             if (requestedCoordinate != tile.Coordinate)
             {
                 var neighbour = playingField.GetTileAt(requestedCoordinate);
-                if (neighbour != null && neighbour.Direction == TileDirection.Direction.None)
+                if (neighbour != null && tile != neighbour && neighbour.Direction == TileDirection.Direction.None)
                 {
                     tile.UpdateFutureCoordinate(requestedCoordinate);
                     tilesSelectedForMoving.Add(tile);

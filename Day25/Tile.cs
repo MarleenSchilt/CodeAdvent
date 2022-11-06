@@ -2,6 +2,11 @@
 
 namespace Day25
 {
+    /// <summary>
+    /// Every field on the playing field is a tile. All tiles combined form the playing field. 
+    /// This class keeps track of a few properties; what direction does a tile face, their current and future coordinate. 
+    /// Every tile has a unique ID for debugging purposes so you can keep track of how a tile moves through the field.
+    /// </summary>
     public class Tile
     {
         private int uniqueId = 0;

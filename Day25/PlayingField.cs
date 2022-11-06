@@ -4,6 +4,11 @@ using System.Linq;
 
 namespace Day25
 {
+    /// <summary>
+    /// Every field on the playing field is a tile. All tiles combined form the playing field. 
+    /// This class keeps track of all tiles that make up the playing field. There are some accessors to find tiles, rows and columns quickly. 
+    /// The actual logic can be found in the GameController class
+    /// </summary>
     public class PlayingField : List<Tile>
     {
         private int uniqueTileId = 0;

@@ -1,5 +1,9 @@
 ﻿namespace Day25
 {
+    /// <summary>
+    /// Enum and ToString for the direction of a tile.
+    /// There are three options; East-facing, South-facing and None.
+    /// </summary>
     public class TileDirection
     {
         public enum Direction

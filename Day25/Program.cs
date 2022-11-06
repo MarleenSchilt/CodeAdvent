@@ -1,5 +1,4 @@
-﻿// Exercise for PitCrew in IJsselstein
-// Challenge is to solve day 25 of the Code Advent tasks of 2021
+﻿// Solution to day 25 of the Code Advent tasks of 2021
 // https://adventofcode.com/2021/day/25
 
 using System;

@@ -4,6 +4,12 @@ using System.Linq;
 
 namespace Day25
 {
+    /// <summary>
+    /// This class handles the search for tiles that must be moved during a turn and the actual move. 
+    /// East-facing tiles move first if there's place for them to the right.
+    /// Then all South-facing tiles move if there is place beneath them.
+    /// The game stops when no tiles can move.
+    /// </summary>
     public class GameController
     {
         PlayingField playingField;

@@ -12,6 +12,15 @@ namespace Day25
         public PlayingField() { }
 
         /// <summary>
+        /// Verify if there are no holes in the field. The amount of tiles should match the expected amount by checking the product of rows and columns.
+        /// </summary>
+        /// <returns>True if the amount of tiles is OK, false if there are not enough or too many tiles</returns>
+        internal bool VerifyTileCount()
+        {
+            return (RowCount * ColumnCount) == this.Count;
+        }
+
+        /// <summary>
         /// Print the current state of the playing field. The layout of the field is as follows:
         ///   ---> (incrementing X-coordinate)
         /// |

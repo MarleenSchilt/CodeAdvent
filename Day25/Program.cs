@@ -15,17 +15,22 @@ namespace Day25
             //var field = ReadFile(@"..\..\TestInput.txt");
             var field = ReadFile(@"..\..\Input.txt");
 
-            // Show the initial playing field
-            Console.WriteLine($"Field has {field.RowCount} rows and {field.ColumnCount} columns.");
-            Console.WriteLine("Initial field state:");
-            Console.Write(field.ToString());
-            Console.WriteLine();
+            if (!field.VerifyTileCount())
+                Console.WriteLine("There are too many or too few tiles in the field. Please check the input file if all rows have the same amount of symbols");
+            else
+            {
+                // Show the initial playing field
+                Console.WriteLine($"Field has {field.RowCount} rows and {field.ColumnCount} columns.");
+                Console.WriteLine("Initial field state:");
+                Console.Write(field.ToString());
+                Console.WriteLine();
 
-            int moveCounter = ExecuteTest1(field);
+                int moveCounter = ExecuteTest1(field);
 
-            // No more changes? Print the final state of the playing field
-            Console.WriteLine($"Field status after {moveCounter} moves:");
-            Console.Write(field.ToString());
+                // No more changes? Print the final state of the playing field
+                Console.WriteLine($"Field status after {moveCounter} moves:");
+                Console.Write(field.ToString());
+            }
 
             Console.ReadLine();
         }
